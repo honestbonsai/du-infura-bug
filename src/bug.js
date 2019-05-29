@@ -7,4 +7,4 @@ const { observable } = createNewBlock$({
   web3,
   pollingInterval: 200, // only used if non-WebsocketProvider
 });
-observable.subscribe(console.log)
+observable.subscribe((val) => console.log("INFURA", val))
